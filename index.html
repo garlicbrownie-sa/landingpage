@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snow Anteater LLC</title>
+    <!-- Pico.css for elegant, classless styling -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        main {
+            flex: 1;
+        }
+        .hero {
+            text-align: center;
+            padding: 3rem 0;
+        }
+        .logo-placeholder {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="container">
+        <nav>
+            <ul>
+                <li><strong>Snow Anteater LLC</strong></li>
+            </ul>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#apps">Our Apps</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+        
+        <!-- Hero Section -->
+        <section class="hero">
+            <img src="logo.png" width="300" alt="Snow Anteater Logo">
+            <h1>Snow Anteater LLC</h1>
+            <p><em>"Always digging. Always testing."</em></p>
+        </section>
+
+        <hr />
+
+        <!-- About Section -->
+        <section id="about">
+            <h2>About Us</h2>
+            <p>
+                Snow Anteater LLC is an independent software development studio focused on crafting 
+                minimal, highly functional, and privacy-first mobile applications. We believe in 
+                local-first data architecture, clean user interfaces, and building tools that 
+                respect our users.
+            </p>
+        </section>
+
+        <!-- Apps Section -->
+        <section id="apps">
+            <h2>Our Apps</h2>
+            <article>
+               <header><strong>Banana Log</strong></header>
+                <p>
+                    <strong>Banana Log</strong> is a clean, privacy-focused workout tracker built to strip away the digital noise and get straight to what matters: your progress. 
+                </p>
+                <p>
+                    While we originally designed it with calisthenics athletes in mind—perfect for tracking planks, pull-ups, and bodyweight progressions—we quickly realized its clean simplicity makes it a powerhouse for traditional weightlifters, too. Whether you are mastering your own bodyweight, moving heavy barbells, or mixing the absolute best of both worlds, we invite you to give it a try.
+                </p>
+                <p>
+                    No forced cloud accounts, no bloated social feeds, and no tracking pixels—just your training, stored safely and strictly on your own device.
+                </p>
+                <footer>
+                    <a href="privacy.html" role="button" class="outline">Banana Log Privacy Policy</a>
+                </footer>
+            </article>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact Support</h2>
+            <p>Have questions or need support with one of our applications? Drop us an email:</p>
+            <p>📧 <a href="mailto:support@yourdomain.com">support@yourdomain.com</a></p>
+        </section>
+
+    </main>
+
+    <!-- Legal Footer -->
+    <footer class="container">
+        <hr />
+        <small>
+            © 2026 Snow Anteater LLC. All rights reserved.<br>
+            All application data is processed locally in accordance with our privacy guidelines.
+        </small>
+    </footer>
+
+</body>
+</html>
