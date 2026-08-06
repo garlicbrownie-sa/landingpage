@@ -19,9 +19,24 @@
             text-align: center;
             padding: 3rem 0;
         }
-        .logo-placeholder {
-            font-size: 3rem;
+        /* Set a clean size for your logo image */
+        img.logo {
+            max-height: 120px;
+            width: auto;
             margin-bottom: 1rem;
+            transition: filter 0.3s ease; /* Smooth transition when toggling */
+        }
+
+        /* 1. Automatically invert image if system theme is set to Dark Mode */
+        @media (prefers-color-scheme: dark) {
+            img.logo {
+                filter: invert(1);
+            }
+        }
+
+        /* 2. Explicitly invert if Pico.css forces Dark Theme */
+        [data-theme="dark"] img.logo {
+            filter: invert(1);
         }
     </style>
 </head>
@@ -46,7 +61,7 @@
         
         <!-- Hero Section -->
         <section class="hero">
-            <img src="logo.png" width="300" alt="Snow Anteater Logo">
+            <img src="logo.png" width="300" alt="Snow Anteater Logo" class="logo">
             <h1>Snow Anteater LLC</h1>
             <p><em>"Always digging. Always testing."</em></p>
         </section>
@@ -76,7 +91,7 @@
                     While we originally designed it with calisthenics athletes in mind—perfect for tracking planks, pull-ups, and bodyweight progressions—we quickly realized its clean simplicity makes it a powerhouse for traditional weightlifters, too. Whether you are mastering your own bodyweight, moving heavy barbells, or mixing the absolute best of both worlds, we invite you to give it a try.
                 </p>
                 <p>
-                    No forced cloud accounts, no bloated social feeds, and no tracking pixels—just your training, stored safely and strictly on your own device.
+                    No accounts, no ads, no social feeds, and no tracking pixels—just your training, stored safely and strictly on your own device.
                 </p>
                 <footer>
                     <a href="privacy.html" role="button" class="outline">Banana Log Privacy Policy</a>
@@ -88,7 +103,7 @@
         <section id="contact">
             <h2>Contact Support</h2>
             <p>Have questions or need support with one of our applications? Drop us an email:</p>
-            <p>📧 <a href="mailto:support@yourdomain.com">support@yourdomain.com</a></p>
+            <p>📧 <a href="mailto:support@snowanteater.com">support@snowanteater.com</a></p>
         </section>
 
     </main>
